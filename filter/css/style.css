@@ -1,0 +1,74 @@
+body{
+    background: #eeeeee;
+}
+.contains{
+    margin: auto 10% auto;
+}
+.contains__title{
+   text-align: center;
+   font-size: 3rem;
+}
+.body-filter{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+.body-filter__item{
+    padding: 8px 12px;
+    border: 1px solid black;
+    color:black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.body-filter__item:hover{
+    background: black;
+    color:pink;
+}
+.filter-input{
+    display: flex;
+    width: 340px;
+    height:30px;
+    padding-left:10px;
+
+    margin: 20px auto;
+}
+.contains__products{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card{
+    display: inline;
+    width: 350px;
+    height:330px;
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    background:white;
+    margin-bottom: 20px;
+}
+.card:hover{
+    cursor: pointer;
+    transform: translateY(-1%);
+    transition: all ease .3s;
+}
+.card__img{
+    width: 100%;
+}
+.card-profile{
+    display: flex;
+    flex-direction: row;
+    padding: 16px 20px;
+    justify-content: space-between;
+}
+.card-profile__title{
+    font-size:20px;
+    font-weight: bold;
+}
+.card-profile__price{
+    font-size:20px;
+    font-weight: bold;
+
+}

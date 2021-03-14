@@ -1,0 +1,426 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#main{
+
+}
+/*-- header --*/
+
+#header{
+    width: 100%;
+    height:90px;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(#b5179e, #f72585, 0, 0.1);
+}
+
+
+
+
+
+/*-- navbar-- */
+.navbar{
+    height: 90px;
+    padding: 0 150px;
+    display: flex;
+    
+    align-items: center;
+}
+/* navbar-logo */
+
+.navbar__brand{
+    flex:2;
+}
+.navbar__brand button{
+    flex:1;
+}
+.navbar__brand img{
+
+}
+
+/* navbar_list */
+.navbar__nav{
+   
+    
+    flex:2;
+    list-style: none;
+}
+.nav__item{
+    display: inline;
+    padding: 38px 18px;
+    
+}
+.nav__item a{
+    font-size:16px;
+    color:#ffffff;
+    opacity: .8;
+    text-decoration: none;
+}
+.nav__item a:hover{
+    opacity: 1;
+}
+.active .nav__link{
+    opacity: 1;
+}
+.navbar__nav .li:hover a{
+    
+}
+.sub{
+    position: relative;
+}
+.sub:hover .subnav{
+    opacity: 1;
+}
+.nav-icon-down{
+    font-size:12px;
+    
+}
+.subnav{
+    
+    position: absolute;
+    left:0;
+    top:100%;
+    width: 220px;
+    background-color: white;
+    list-style: none;
+    border-bottom: 4px solid #500ade;
+    opacity: 0;
+
+    transition: all ease 0.3s;
+}
+
+.subnav .subnav__item{
+    padding: 12px 20px;
+
+}
+.subnav__item:nth-child(1){
+    border-bottom: 1px solid #e2e2e2;
+}
+.subnav .subnav__item:hover{
+    background-color: #500ade;
+
+}
+.subnav .subnav__item:hover a{
+    color:white;
+    
+
+}
+.subnav a{
+    font-size:16px;
+    color:#666666;
+}
+.sub i{
+    color:white;
+}
+
+
+
+
+
+
+#content{
+    position: relative;
+    padding: 200px 150px 20px; 
+    background-image: linear-gradient(to right, #b5179e , #f72585);
+    
+    
+
+
+   
+}
+
+/* .background{
+    position: relative;
+    opacity: 0.1;
+    height:890px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(http://irtech.biz/tf/appside/appside/assets/img/bg/header-bg-9.jpg);
+} */
+
+.title{
+   display: flex;
+   min-height: 790px;
+   
+}
+.title__profile{
+    width: 540px;
+    padding-top:200px;
+    margin-right:100px;
+}
+.title__profile .profile__heading{
+    font-size:58px;
+    font-weight: 700;
+    line-height: 68px;
+    color:white;
+    margin-bottom: 20px;
+}
+.title__profile .profile__content{
+    display: block;
+    font-size:18px;
+    font-weight: 300;
+    line-height: 28px;
+    color:white;
+    margin-bottom: 20px;
+
+}
+
+#counter{
+    padding: 0 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.counter__title{
+    width: 920px;
+    text-align: center;
+    font-size:48px;
+    font-weight: 700;
+    line-height: 58px;
+    color:#1c144e;
+
+    padding: 100px 0 60px;
+    
+}
+.counterlist__item{
+    width: 286px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.counterlist__item p{
+    width: 100%;
+    text-align: center;
+
+    font-size:18px;
+    color:#666666;
+}
+.counterlist{
+    display: flex;
+    justify-content: space-around;
+
+}
+.counterbox{
+    --height-counter: 130px;
+    width: 130px;
+    height:var(--height-counter);
+    line-height: var(--height-counter);
+
+    background-color: #f7f7f8;
+    border-radius: 10px;
+   
+    font-size:48px;
+    text-align: center;
+
+    margin-bottom: 8px;
+
+    
+}
+.counterbox__head{
+    background: -webkit-linear-gradient(#007bff, #6f42c1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ABOUT */
+.about{
+    padding: 100px 150px;
+    margin-top:80px;
+    background-image: url(http://irtech.biz/tf/appside/appside/assets/img/bg/about-app-area-bg.png);
+    
+}
+.feature__list{
+    display: flex;
+    list-style: none;
+    border: 2px solid #ededed;
+}
+.feature__item{
+   position: relative;
+    padding: 20px 10px;
+    height: 360px;
+    background: white;
+    text-align: center;
+    border-top-width: 20px solid red;
+    border-right: 2px solid #ededed;
+
+}
+
+.feature__item::after{
+    content: '';
+    position: absolute;
+    top:0%;
+    left:0%;
+    height:4px;
+    width: 0%;
+    background:linear-gradient(to right, #b5179e , #f72585);
+    transition: all ease 0.8s;
+
+}
+.feature__item:hover{
+    box-shadow: 0px 0px 95px 0px rgb(0 0 0 / 7%);
+
+
+}
+.feature__title:hover{
+    color:#500ade;
+    cursor: pointer;
+}
+.feature__item:hover::after{
+    width: 100%;
+}
+.feature__logo{
+    display: inline-block;
+    margin: 30px 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background-color: var(--purple);
+    color:white;
+    border-radius: 50%;
+}
+.feature__title{
+    font-size:22px;
+    font-weight: 700;
+    color:#1c144e;
+    margin: 10px 0;
+}
+.feature__content{
+    font-size:16px;
+    font-weight: 300;
+    color:#666666;
+}
+
+/* pricing */
+.pricing{
+    padding: 100px 150px;
+    text-align: center;
+}
+.pricing__title{
+    font-size:20px;
+    color:#500ade;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.pricing__heading{
+    font-size:48px;
+    color:#1c144e;
+    margin-bottom: 10px;
+}
+.pricing__content{
+    width: 720px;
+    font-size:16px;
+    color:#777777;
+    margin: 0 auto;
+}
+/* pricing card */
+.pricingcard{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+
+    margin-top:40px;
+}
+.pricingcard__item{
+    position: relative;
+    padding: 50px 70px;
+    height:500px;
+    border:1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+}
+.pricingcard__header h4{
+    font-size:18px;
+    color:#1c144e;
+    margin-bottom: 14px;
+}
+.pricingcard__money{
+    font-size: 48px;
+    color:#1c144e;
+    display: inline;
+}
+.pricingcard__month{
+    font-size: 16px;
+    font-weight: 300;
+    color:#1c144e;
+}
+.pricingcard__body ul{
+    list-style: none;
+    margin:20px 0 40px;
+}
+.pricingcard__body ul li{
+    font-size:16px;
+    font-weight: 300;
+    color:#666666;
+    margin-bottom: 10px;
+}
+.pricingcard__item:nth-child(2)::after{
+    content: '';
+    width: 100%;
+    height:4px;
+    position: absolute;
+    top:0;
+    left:0;
+    background:linear-gradient(to right, #b5179e , #f72585);
+}
+.pricingcard__item::after{
+    content: '';
+    width: 0%;
+    height:4px;
+    position: absolute;
+    top:0;
+    left:0;
+    background:linear-gradient(to right, #b5179e , #f72585);
+    transition: all ease 0.8s;
+}
+.pricingcard__item:hover::after{
+    content: '';
+    width: 100%;
+    height:4px;
+    position: absolute;
+    top:0;
+    left:0;
+    background:linear-gradient(to right, #b5179e , #f72585);
+}
+.pricingcard__item:hover{
+    box-shadow: 0px 0px 95px 0px rgb(0 0 0 / 7%);
+
+
+
+}
+#footer{
+    padding: 200px 150px 100px;
+    background: #1c144e;
+    display: flex;
+    justify-content: space-around;
+}
+.footer__box{
+    width: 255px;
+    color:white;
+}
+.footer__content{
+    margin-top:10px;
+    font-weight: 300;
+    color: white;
+    opacity: .8;
+}
+.footer__box h4{
+    font-size:22px;
+    margin-bottom: 14px;
+}
+.footer__box ul{
+    list-style: none;
+}
+.footer__box ul li {
+    margin-bottom: 10px;
+}
+.footer__box ul li a{
+    font-weight: 300;
+    text-decoration: none;
+    color:white;
+}

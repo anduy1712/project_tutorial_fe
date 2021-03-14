@@ -1,0 +1,100 @@
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .col-0{
+        display: none;
+    }
+    .mob-mb{
+        margin-bottom: 20px;
+    }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .col-0{
+        display: none;
+    }
+    .mob-mb{
+        margin-bottom: 20px;
+    }
+ }
+nav ul li a{
+    font-size:14px;
+    font-weight: 600;
+}
+.slider{
+    /* height:420px; */
+    background-color: #754ffe;
+    overflow: hidden;
+}
+.slider__content{
+    margin-top:80px;
+}
+.slider .slider__heading{
+    font-size:40px;
+    font-weight: 700;
+    color:white;
+    line-height: 52px;
+
+}
+.slider .slider__profile{
+    font-size:20px;
+    color:white;
+    opacity: 0.7;
+    line-height: 32px;
+
+}
+.slider .bg{
+    padding-top: 50%;
+    
+    background: url(https://codescandy.com/geeks/assets/images/hero/hero-img.png) center center / contain  no-repeat;
+    
+}
+
+/* content */
+.content{
+    background: #f5f4f8;
+    padding-top:40px;
+}
+.content .card{
+    width: 100%!important;
+}
+.content h3{
+    margin-bottom:20px;
+
+    font-size:24px;
+    font-weight: 500;
+}
+.content .card-title{
+    font-size:16px;
+}
+.content .card-text{
+    font-size:14px;
+}
+.content .card{
+   
+    box-shadow: 0 1px 3px rgb(3 0 71 / 9%);
+}
+.content .card:hover{
+    cursor: pointer;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+
+    
+}
+.content .card-footer{
+    display: flex;
+    background-color: white;
+    padding: 14px 10px;
+}
+.card-footer img{
+    width: 24px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.card-footer .card-author{
+   font-size:16px;
+   color:#5c5776;
+}

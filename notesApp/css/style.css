@@ -1,0 +1,88 @@
+body{
+    background: #caffbf;
+}
+.right-alight{
+    text-align: right;
+}
+.btn{
+    padding: 10px 50px; 
+    outline: none;
+    border: none;
+    border-radius: 2px;   
+    font-size:12px;
+    text-transform: uppercase;
+}
+.btn:hover{
+    cursor: pointer;
+    filter: brightness(97%);
+}
+
+.btn-success{
+    background: #ffd6a5;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.card{
+    margin: 20px 0;
+    width: 330px;
+    height:380px;
+    background: white;
+    box-shadow: 2px 3px 1px rgb(0 0 0 / 10%);
+
+}
+
+.card__top{
+    height:40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    background: #ffd6a5;
+
+}
+
+.card--top__title{
+    font-size:12px;
+}
+.fa-times, .fa-edit{
+    
+    color:white;
+    margin-right:4px;
+    font-size:14px;
+}
+.fa-times:hover, .fa-edit:hover{
+    
+    cursor: pointer;
+}
+.card__body{
+    position: relative;
+    width: 100%;
+    height: 340px;
+    
+
+}
+ .invalid{
+    position: absolute;
+    
+    width: 100%;
+    height:100%;
+    background: rgba(0, 0, 0, 0.1);
+    
+
+}
+.card--body__input{
+    box-sizing: border-box;
+    padding: 5px 8px;
+    width: 324px;
+    height: 100%;
+    border: none;
+    outline: none;
+}

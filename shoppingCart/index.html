@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random Quotes</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header">
+      <div class="header__top">
+        <input class="header--top__input" type="text" placeholder="search heare...">
+        <i class="fas fa-search"></i>
+      </div>
+      <div class="header__bot">
+
+          <i class="fas fa-shopping-cart"></i>
+          <div class="boxcart hidden">
+            <!-- <div class="boxcart__item">
+                <img class="boxcart_img" src="https://cdn.shopify.com/s/files/1/0498/9927/4401/products/12Untitled-2.jpg?v=1604558516" alt="">
+              <div class="boxcart__profile">
+              <h3 class="boxcart__heading">SB Chron British Tan</h3>
+              <p class="boxcart__price">$95</p>
+              <button>Xoa</button>
+            </div>
+            </div> -->
+            
+            
+          </div>
+      </div>
+
+  </div>
+  
+  <div class="container">
+    <!-- <div class="card">
+      <div class="card__img">
+        <img src="https://cdn.shopify.com/s/files/1/0498/9927/4401/products/sp.jpg?v=1602133004" alt="">
+
+      </div>
+      <div class="card--profile">
+          <h3 class="card--profile__title">Sneaker Earth - Hight Top -Goat</h3>
+
+          <p class="card--profile__price">$500.00 USD</p>
+      </div>
+      <div class="card--button">
+        <button class="btn btn-buy">Mua Ngay</button>
+        <button class="btn btn-cart">Gio Hang</button>
+
+
+      </div>
+      
+
+    </div> -->
+    
+    
+  </div>
+
+
+
+
+<script src="/js/app.js">
+
+</script>
+<script>
+  var hover = document.querySelector('.fa-shopping-cart');
+  var boxcart = document.querySelector('.boxcart');
+
+  hover.addEventListener('click',function(e){
+    boxcart.classList.toggle('hidden');
+  })
+</script>
+</body>
+</html>

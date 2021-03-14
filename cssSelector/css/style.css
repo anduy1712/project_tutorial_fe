@@ -1,0 +1,22 @@
+/* Không cần kế thừa trực tiếp từ lớp cha */
+/* .container .hello-class {
+  color: red;
+} */
+
+/* Kế thừa trực tiếp từ lớp cha */
+/* .paragraph-container > .hello-class {
+  color: blue;
+} */
+
+/* Kế thừa không trực tiếp từ lớp cha (không hoạt động) */ 
+/* .container > .hello-class {
+  color: blue;
+} */
+
+
+/* .paragraph-container * {
+  color: blue;
+} */
+
+
+
